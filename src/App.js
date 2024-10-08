@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import { Routes, Route } from "react-router-dom";
+import Shop from "./components/Shop";
+import Cart from "./components/Cart";
+import Contactus from "./components/Contactus";
+import { ProductsProvider } from "./store/Context";
+import ProductDetails from "./components/ProductDetails";
+import Order from "./components/Order";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App overflow-hidden">
+      <ProductsProvider>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+
+          <Route path="/shop" element={<Shop />}></Route>
+
+          <Route path="/cart" element={<Cart />}></Route>
+          <Route path="/contactus" element={<Contactus />}></Route>
+          <Route
+            path="/productDetails/:productid"
+            element={<ProductDetails />}
+          ></Route>
+          <Route path="/order" element={<Order />}></Route>
+        </Routes>
+      </ProductsProvider>
     </div>
   );
 }
