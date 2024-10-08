@@ -21,6 +21,28 @@ I'm thrilled to announce the completion of my e-commerce web application, **E-Sh
   - ![Tailwind CSS](https://img.icons8.com/color/50/000000/tailwindcss.png) Tailwind CSS
 - **Payment Gateway**:
   - ![Razorpay](https://img.icons8.com/color/50/000000/razorpay.png) Razorpay (testing implementation)
+ 
+🛒 Payment Testing Instructions
+To test the payment functionality in the e-commerce application, you can use the following details:
+
+Test Card Details
+Card Number: 4111 1111 1111 1111 (Visa test card)
+Expiry Date: Any future date (e.g., 12/25)
+CVV: 123
+Steps to Complete a Test Payment
+Add Products to Cart: Browse the products and add them to your cart.
+Proceed to Checkout: Click on the cart icon and proceed to checkout.
+Enter Payment Details:
+Card Number: Enter 4111 1111 1111 1111.
+Expiry Date: Choose any future date (e.g., 12/25).
+CVV: Enter 123.
+Continue: Click on the Continue button to proceed with the payment.
+Skip OTP (Optional): You may choose to skip the OTP step for testing purposes.
+OTP Entry:
+If prompted, enter 123456 as the OTP.
+Finalize Payment: Click on the Continue button to complete the payment process.
+Note
+This is a test payment scenario. No actual money will be deducted from your account during this process.
 
 ## 🚀 Future Enhancements
 
@@ -33,4 +55,4 @@ I’m looking forward to enhancing this project with backend functionality and m
 
 ## 🌐 Live Demo
 
-Feel free to check out the live demo here: [Insert Live Demo Link]
+Feel free to check out the live demo here: [https://e-shopee-delta.vercel.app/]
